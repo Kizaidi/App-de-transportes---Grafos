@@ -1,0 +1,7 @@
+
+No VSCODE
+
+Compilar: gcc transporte.c -o transporte.exe
+Executar: ./transporte dados.txt
+
+

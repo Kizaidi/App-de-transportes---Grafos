@@ -1,0 +1,72 @@
+                                    Tema: App de transportes - Grafos
+
+Objectivos
+• Dominar os conceitos sobre estruturas de dados
+• Materializar os conceitos por meio de uma solução de software
+• Melhorar capacidade de interpretação de texto
+• Melhorar a capacidade de escrita e oratória
+• Dominar ferramentas de apresentação
+
+Visão Geral
+Um dos grandes problemas na cidade de Luanda é a mobilidade. Por um lado,
+existe a ausência de um sistema de transportes públicos que satisfaça a todos
+e por outro a condição das estradas. Para contornar os dois problemas, foi-vos
+proposto o desafio de desenvolverem uma aplicação de transportes
+personalizados, usando grafos.
+O programa deve ser capaz de criar um mapa que represente todas as ruas de
+uma zona da cidade, com indicação das ruas com buracos. O programa deve
+ainda cadastrar utilizadores e táxis com as suas respectivas localizações.
+Sempre que um utilizador chamar um taxi, devem ser cumpridas as seguintes
+regras:
+• Se existir mais do que um táxi disponível, deve responder o táxi que
+estiver mais próximo da chamada;
+• O melhor percurso é aquele que é mais perto e sem buracos.
+Para simplificar, a localização dos clientes e taxistas é sempre uma esquina
+(vértice do grafo)
+
+Estrutura do trabalho
+O programa deve permitir as seguintes opções:
+1. Gestão de utilizadores
+2. Backoffice (necessita de autenticação do adm) 
+Criar localidade (cria a localidade com base nos dados de entrada)
+• Adicionar novo ponto
+• Remover ponto (Remover também todas as ligações ao ponto, caso
+existam)
+• Adicionar nova rua (Ligação entre dois pontos existentes, adiciona
+também a distância em metros)
+• Eliminar rua (elimina também o ponto que fica sem ligações)
+• Adicionar buracos
+• Remover buracos
+• Cadastrar taxistas (incluir localização)
+• Imprimir localidade
+• Imprimir todos os caminhos sem buracos
+3. Aplicação (necessita de autenticação do utilizador)
+• Cadastrar cliente (incluir localização)
+• Chamar taxi (deve indicar o destino, ver a disponibilidade, calcular o
+custo e imprimir o valor a pagar)
+• Imprimir todos os caminhos entre dois pontos
+• Imprimir melhor caminho entre dois pontos (mais próximo e sem
+buracos)
+A entrada dos dados será feita a partir de um ficheiro. A primeira linha do
+ficheiro, deve conter dois números, que representam respectivamente (V, E),
+onde V serão os pontos do município e E as ruas ou ligações.
+Para cada linha seguinte, haverá 3 números que indicam o início e o fim de cada
+rua e a distância em metros. A entrada de dados termina com os pares (0 0). A
+entrada de dados deve ter no mínimo 18 ruas. 
+Exemplo de uma entrada:
+6 8
+1 		2		 8
+1 		3		 9
+1 4 7
+2 3 8
+3 4 5
+2 5 11
+3 6 7
+5 6 5
+0 0
+
+Para a realização do trabalho, siga atentamente as seguintes instruções:
+• O trabalho deve ser realizado em C e não em C++;
+• Deve usar o conceito de Tipos Abstractos de Dados e criar os tipos mais
+apropriados para cada caso;
+• O programa deve imprimir mensagens de falha e de sucesso;
